@@ -6,6 +6,10 @@ jobs:
     steps: 
       - name: Print Greeting
         run: echo "Hello World!"
+      - name: Run Multiple Messages
+        run: | # Adicione este símbolo para rodar multiplos comandos em um mesmo step
+          echo "First message"
+          echo "Second message!"
       - name: Print Goodbye
         run: echo "Done - Bye!"
       
